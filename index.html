@@ -8,6 +8,52 @@
     <script src='./js/scripts.js'></script>
   </head>
   <body>
+   <!--ENTIRE CONTAINER-->
+   <div class="container bg-light">
+     <div class='title'>
+       <h1>Pizza Order Form</h1>
+     </div>
+
+
+     <form class='my-5'>
+       <!--------PIZZA SIZE------------
+       Radio buttons for a size selection:
+       Personal, Medium, Large, and Extra Large
+       --------------------------------------->
+       <div class='row'>
+
+
+         <!--/PERSONAL-->
+
+         <!--MEDIUM-->
+         <div class="col-3 text-center">
+           <div class="custom-control custom-radio">
+             <input class="custom-control-input" type="radio" name="selectSize" id="medium" value="Medium">
+             <label class="custom-control-label" for="medium">
+               <img id='mediumPic' class='img-fluid' src='./images/pizza-clipart.png' alt='medium size pizza, $10.00'>
+               <div>Medium ($10.00)</div>
+             </label>
+           </div>
+         </div>
+         <!--/MEDIUM-->
+
+         <!--LARGE-->
+         <div class="col-3 text-center">
+           <div class="custom-control custom-radio">
+             <input class="custom-control-input" type="radio" name="selectSize" id="large" value="Large">
+             <label class="custom-control-label" for="large">
+               <img id='largePic' class='img-fluid' src='./images/pizza-clipart.png' alt='large size pizza, $14.00'>
+               <div>Large ($14.00)</div>
+             </label>
+           </div>
+         </div>
+         <!--/LARGE-->
+
+      </form>
+
+
+
+
 
   </body>
 </html>
