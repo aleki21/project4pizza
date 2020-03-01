@@ -26,3 +26,17 @@ h1 {
 #mediumPic {
   width: 10vw;
 }
+#largePic {
+  width: 12vw;
+}
+
+#xlargePic {
+  width: 13vw;
+}
+
+.customizeBox {
+  border: 1px solid skyblue;
+  border-radius: 5px;
+  box-shadow: 3px 3px 10px 3px skyblue;
+  background-color: white;
+}
