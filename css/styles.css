@@ -1,0 +1,10 @@
+.title {
+  background-color: rgb(166, 226, 250);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100px;
+  z-index: 100;
+  box-shadow: 0 5px 10px 1px #222;
+}
