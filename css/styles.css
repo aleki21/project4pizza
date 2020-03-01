@@ -51,3 +51,25 @@ h1 {
   font-style: oblique;
   font-size: 85%;
 }
+.receiptRow {
+  margin: 10px 0px;
+  border-bottom: 1px dashed skyblue;
+}
+
+.costs {
+  position: absolute;
+  right: 15px;
+}
+
+#total {
+  font-weight: bolder;
+  padding: 10px;
+  margin-top: 30px;
+  border-top: 1px dotted grey;
+  border-bottom: 1px dotted grey;
+}
+
+#orderAgain {
+  margin: auto;
+  display: none;
+}
