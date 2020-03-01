@@ -40,3 +40,14 @@ h1 {
   box-shadow: 3px 3px 10px 3px skyblue;
   background-color: white;
 }
+.container {
+  padding: 30px;
+  position: relative;
+  top: 100px;
+}
+
+.ingredients {
+  color: darkblue;
+  font-style: oblique;
+  font-size: 85%;
+}
