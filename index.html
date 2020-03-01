@@ -1,68 +1,74 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Alex's Pizza!</title>
-    <link href="/tmp/atom-120112-2928-42id93.rq5on/bootstrap-4.4.1-dist.zip/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="/home/alex/Documents/project4/css/styles.css" rel="stylesheet" type="text/css" media="all">
+    <title>Pizza!</title>
+    <link rel='icon' href='./images/pizza-icon.png'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src='./js/scripts.js'></script>
   </head>
+
   <body>
-   <!--ENTIRE CONTAINER-->
-   <div class="container bg-light">
-     <div class='title'>
-       <h1>Pizza Order Form</h1>
-     </div>
+    <!--ENTIRE CONTAINER-->
+    <div class="container bg-light">
+      <div class='title'>
+        <h1>Pizza Order Form</h1>
+      </div>
 
 
-     <form class='my-5'>
-       <!--------PIZZA SIZE------------
-       Radio buttons for a size selection:
-       Personal, Medium, Large, and Extra Large
-       --------------------------------------->
-       <div class='row'>
+      <form class='my-5'>
+        <!--------PIZZA SIZE------------
+        Radio buttons for a size selection:
+        Personal, Medium, Large, and Extra Large
+        --------------------------------------->
+        <div class='row'>
 
 
-         <!--/PERSONAL-->
+          <!--/PERSONAL-->
 
-         <!--MEDIUM-->
-         <div class="col-3 text-center">
-           <div class="custom-control custom-radio">
-             <input class="custom-control-input" type="radio" name="selectSize" id="medium" value="Medium">
-             <label class="custom-control-label" for="medium">
-               <img id='mediumPic' class='img-fluid' src='./images/pizza-clipart.png' alt='medium size pizza, $10.00'>
-               <div>Medium ($10.00)</div>
-             </label>
-           </div>
-         </div>
-         <!--/MEDIUM-->
+          <!--MEDIUM-->
+          <div class="col-3 text-center">
+            <div class="custom-control custom-radio">
+              <input class="custom-control-input" type="radio" name="selectSize" id="medium" value="Medium">
+              <label class="custom-control-label" for="medium">
+                <img id='mediumPic' class='img-fluid' src='./images/pizza-clipart.png' alt='medium size pizza, $10.00'>
+                <div>Medium ($10.00)</div>
+              </label>
+            </div>
+          </div>
+          <!--/MEDIUM-->
 
-         <!--LARGE-->
-         <div class="col-3 text-center">
-           <div class="custom-control custom-radio">
-             <input class="custom-control-input" type="radio" name="selectSize" id="large" value="Large">
-             <label class="custom-control-label" for="large">
-               <img id='largePic' class='img-fluid' src='./images/pizza-clipart.png' alt='large size pizza, $14.00'>
-               <div>Large ($14.00)</div>
-             </label>
-           </div>
-         </div>
-         <!--/LARGE-->
-         <!--X LARGE-->
-         <div class="col-3 text-center">
-           <div class="custom-control custom-radio">
-             <input class="custom-control-input" type="radio" name="selectSize" id="xlarge" value="X-Large">
-             <label class="custom-control-label" for="xlarge">
-               <img id='xlargePic' class='img-fluid' src='./images/pizza-clipart.png' alt='xlarge size pizza, $16.00'>
-               <div>X-Large ($16.00)</div>
-             </label>
-           </div>
-         </div>
-         <!--/X LARGE-->
-       </div>
-       <!---------/PIZZA SIZE---------->
+          <!--LARGE-->
+          <div class="col-3 text-center">
+            <div class="custom-control custom-radio">
+              <input class="custom-control-input" type="radio" name="selectSize" id="large" value="Large">
+              <label class="custom-control-label" for="large">
+                <img id='largePic' class='img-fluid' src='./images/pizza-clipart.png' alt='large size pizza, $14.00'>
+                <div>Large ($14.00)</div>
+              </label>
+            </div>
+          </div>
+          <!--/LARGE-->
 
-       <!--CUSTOMIZE-->
+          <!--X LARGE-->
+          <div class="col-3 text-center">
+            <div class="custom-control custom-radio">
+              <input class="custom-control-input" type="radio" name="selectSize" id="xlarge" value="X-Large">
+              <label class="custom-control-label" for="xlarge">
+                <img id='xlargePic' class='img-fluid' src='./images/pizza-clipart.png' alt='xlarge size pizza, $16.00'>
+                <div>X-Large ($16.00)</div>
+              </label>
+            </div>
+          </div>
+          <!--/X LARGE-->
+        </div>
+        <!---------/PIZZA SIZE---------->
+
+        <!--CUSTOMIZE-->
         <div class='row justify-content-center my-5'>
 
           <!-----------------MEATS-------------------
@@ -114,186 +120,186 @@
           <!------------------/MEATS----------------->
 
           <!--------------------VEGGIES-----------------
-        Check boxes for multiple selection of veggies:
-        Tomatoes, Onions, Olives, Green Peppers, Mushrooms,
-        Pineapple, Spinach, and Jalapeno
-        --------------------------------------------->
-        <div class='customizeBox col-xl-3 col-lg-4 col-md-5 p-3 m-3'>
-          <h5>VEGGIE(s)</h5>
-          <p>1 topping included, $1.00 for each additional veggie.</p>
-          <hr>
-          <div class="form-check">
-            <input class="form-check-input veggie" type="checkbox" value="Tomatoes" id="tomatoes">
-            <label class="form-check-label" for="tomatoes">
-              Tomatoes
-            </label>
+          Check boxes for multiple selection of veggies:
+          Tomatoes, Onions, Olives, Green Peppers, Mushrooms,
+          Pineapple, Spinach, and Jalapeno
+          --------------------------------------------->
+          <div class='customizeBox col-xl-3 col-lg-4 col-md-5 p-3 m-3'>
+            <h5>VEGGIE(s)</h5>
+            <p>1 topping included, $1.00 for each additional veggie.</p>
+            <hr>
+            <div class="form-check">
+              <input class="form-check-input veggie" type="checkbox" value="Tomatoes" id="tomatoes">
+              <label class="form-check-label" for="tomatoes">
+                Tomatoes
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input veggie" type="checkbox" value="Onions" id="onions">
+              <label class="form-check-label" for="onions">
+                Onions
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input veggie" type="checkbox" value="Olives" id="olives">
+              <label class="form-check-label" for="olives">
+                Olives
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input veggie" type="checkbox" value="Green Peppers" id="greenPeppers">
+              <label class="form-check-label" for="greenPeppers">
+                Green Peppers
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input veggie" type="checkbox" value="Mushrooms" id="mushrooms">
+              <label class="form-check-label" for="mushrooms">
+                Mushrooms
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input veggie" type="checkbox" value="Pineapple" id="pineapple">
+              <label class="form-check-label" for="pineapple">
+                Pineapple
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input veggie" type="checkbox" value="Spinach" id="spinach">
+              <label class="form-check-label" for="spinach">
+                Spinach
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input veggie" type="checkbox" value="Jalapeno" id="jalapeno">
+              <label class="form-check-label" for="jalapeno">
+                Jalapeno
+              </label>
+            </div>
           </div>
-          <div class="form-check">
-            <input class="form-check-input veggie" type="checkbox" value="Onions" id="onions">
-            <label class="form-check-label" for="onions">
-              Onions
-            </label>
+          <!------------------/VEGGIES-------------->
+
+          <!-----------------CHEESE------------------
+          Radio buttons for a cheese selection:
+          Regular, No cheese, Extra Cheese
+          ------------------------------------------>
+          <div class='customizeBox col-xl-3 col-lg-4 col-md-5 p-3 m-3'>
+            <h5>CHEESE</h5>
+            <p>Select from choices below.</p>
+            <hr>
+            <div class="form-check">
+              <input class="form-check-input" name='cheeseRadio' type="radio" value="Regular Cheese" id="regularCheese" checked>
+              <label class="form-check-label" for="regularCheese">
+                Regular Cheese
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" name='cheeseRadio' type="radio" value="No Cheese" id="noCheese">
+              <label class="form-check-label" for="noCheese">
+                No Cheese
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" name='cheeseRadio' type="radio" value="Extra Cheese" id="extraCheese">
+              <label class="form-check-label" for="extraCheese">
+                Extra Cheese ($3)
+              </label>
+            </div>
           </div>
-          <div class="form-check">
-            <input class="form-check-input veggie" type="checkbox" value="Olives" id="olives">
-            <label class="form-check-label" for="olives">
-              Olives
-            </label>
+          <!------------------/CHEESE--------------->
+
+          <!------------------CRUST------------------
+          Radio buttons for a crust selection:
+          Plain Crust, Garlic Butter Crust, Cheese Stuffed Crust,
+          Spicy Crust, and House Special Crust
+          ------------------------------------------->
+          <div class='customizeBox col-xl-3 col-lg-4 col-md-5 p-3 m-3'>
+            <h5>CRUST</h5>
+            <p>Select from choices below.</p>
+            <hr>
+            <div class="form-check">
+              <input class="form-check-input" name='crustRadio' type="radio" value="Plain Crust" id="plainCrust" checked>
+              <label class="form-check-label" for="plainCrust">
+                Plain Crust
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" name='crustRadio' type="radio" value="Garlic Butter Crust" id="garlicCrust">
+              <label class="form-check-label" for="garlicCrust">
+                Garlic Butter Crust
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" name='crustRadio' type="radio" value="Cheese Stuffed Crust" id="cheeseCrust">
+              <label class="form-check-label" for="cheeseCrust">
+                Cheese Stuffed Crust ($3)
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" name='crustRadio' type="radio" value="Spicy Crust" id="spicyCrust">
+              <label class="form-check-label" for="spicyCrust">
+                Spicy Crust
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" name='crustRadio' type="radio" value="House Special Crust" id="houseCrust">
+              <label class="form-check-label" for="houseCrust">
+                House Special Crust
+              </label>
+            </div>
           </div>
-          <div class="form-check">
-            <input class="form-check-input veggie" type="checkbox" value="Green Peppers" id="greenPeppers">
-            <label class="form-check-label" for="greenPeppers">
-              Green Peppers
-            </label>
+          <!----------------/CRUST------------>
+
+          <!---------------SAUCE----------------
+          Radio buttons for a sauce selection:
+          Marinara sauce, White sauce, Barbeque sauce, and No Sauce
+          ------------------------------------->
+          <div class='customizeBox col-xl-3 col-lg-4 col-md-5 p-3 m-3'>
+            <h5>SAUCE</h5>
+            <p>Select from choices below.</p>
+            <hr>
+            <div class="form-check">
+              <input class="form-check-input" name='sauceRadio' type="radio" value="Marinara" id="marinara" checked>
+              <label class="form-check-label" for="marinara">
+                Marinara
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" name='sauceRadio' type="radio" value="White Sauce" id="whiteSauce">
+              <label class="form-check-label" for="whiteSauce">
+                White Sauce
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" name='sauceRadio' type="radio" value="Barbeque" id="bbqSauce">
+              <label class="form-check-label" for="bbqSauce">
+                Barbeque
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" name='sauceRadio' type="radio" value="No Sauce" id="noSauce">
+              <label class="form-check-label" for="noSauce">
+                No Sauce
+              </label>
+            </div>
           </div>
-          <div class="form-check">
-            <input class="form-check-input veggie" type="checkbox" value="Mushrooms" id="mushrooms">
-            <label class="form-check-label" for="mushrooms">
-              Mushrooms
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input veggie" type="checkbox" value="Pineapple" id="pineapple">
-            <label class="form-check-label" for="pineapple">
-              Pineapple
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input veggie" type="checkbox" value="Spinach" id="spinach">
-            <label class="form-check-label" for="spinach">
-              Spinach
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input veggie" type="checkbox" value="Jalapeno" id="jalapeno">
-            <label class="form-check-label" for="jalapeno">
-              Jalapeno
-            </label>
+          <!------------------/SAUCE-------------->
+
+        </div>
+        <!--/CUSTOMIZE-->
+
+        <!--BUTTONS-->
+        <div class='row'>
+          <div class='col text-center mb-5'>
+            <button class='btn btn-primary' type=submit>Submit Order</button>
+            <button class='btn btn-danger' type="reset">Reset</button>
           </div>
         </div>
-        <!------------------/VEGGIES-------------->
+        <!--/BUTTONS-->
+      </form>
+      <!--/FORM-->
 
-        <!-----------------CHEESE------------------
-        Radio buttons for a cheese selection:
-        Regular, No cheese, Extra Cheese
-        ------------------------------------------>
-        <div class='customizeBox col-xl-3 col-lg-4 col-md-5 p-3 m-3'>
-          <h5>CHEESE</h5>
-          <p>Select from choices below.</p>
-          <hr>
-          <div class="form-check">
-            <input class="form-check-input" name='cheeseRadio' type="radio" value="Regular Cheese" id="regularCheese" checked>
-            <label class="form-check-label" for="regularCheese">
-              Regular Cheese
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" name='cheeseRadio' type="radio" value="No Cheese" id="noCheese">
-            <label class="form-check-label" for="noCheese">
-              No Cheese
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" name='cheeseRadio' type="radio" value="Extra Cheese" id="extraCheese">
-            <label class="form-check-label" for="extraCheese">
-              Extra Cheese ($3)
-            </label>
-          </div>
-        </div>
-        <!------------------/CHEESE--------------->
-
-        <!------------------CRUST------------------
-         Radio buttons for a crust selection:
-         Plain Crust, Garlic Butter Crust, Cheese Stuffed Crust,
-         Spicy Crust, and House Special Crust
-         ------------------------------------------->
-         <div class='customizeBox col-xl-3 col-lg-4 col-md-5 p-3 m-3'>
-           <h5>CRUST</h5>
-           <p>Select from choices below.</p>
-           <hr>
-           <div class="form-check">
-             <input class="form-check-input" name='crustRadio' type="radio" value="Plain Crust" id="plainCrust" checked>
-             <label class="form-check-label" for="plainCrust">
-               Plain Crust
-             </label>
-           </div>
-           <div class="form-check">
-             <input class="form-check-input" name='crustRadio' type="radio" value="Garlic Butter Crust" id="garlicCrust">
-             <label class="form-check-label" for="garlicCrust">
-               Garlic Butter Crust
-             </label>
-           </div>
-           <div class="form-check">
-             <input class="form-check-input" name='crustRadio' type="radio" value="Cheese Stuffed Crust" id="cheeseCrust">
-             <label class="form-check-label" for="cheeseCrust">
-               Cheese Stuffed Crust ($3)
-             </label>
-           </div>
-           <div class="form-check">
-             <input class="form-check-input" name='crustRadio' type="radio" value="Spicy Crust" id="spicyCrust">
-             <label class="form-check-label" for="spicyCrust">
-               Spicy Crust
-             </label>
-           </div>
-           <div class="form-check">
-             <input class="form-check-input" name='crustRadio' type="radio" value="House Special Crust" id="houseCrust">
-             <label class="form-check-label" for="houseCrust">
-               House Special Crust
-             </label>
-           </div>
-         </div>
-         <!----------------/CRUST------------>
-
-         <!---------------SAUCE----------------
-         Radio buttons for a sauce selection:
-         Marinara sauce, White sauce, Barbeque sauce, and No Sauce
-         ------------------------------------->
-         <div class='customizeBox col-xl-3 col-lg-4 col-md-5 p-3 m-3'>
-           <h5>SAUCE</h5>
-           <p>Select from choices below.</p>
-           <hr>
-           <div class="form-check">
-             <input class="form-check-input" name='sauceRadio' type="radio" value="Marinara" id="marinara" checked>
-             <label class="form-check-label" for="marinara">
-               Marinara
-             </label>
-           </div>
-           <div class="form-check">
-             <input class="form-check-input" name='sauceRadio' type="radio" value="White Sauce" id="whiteSauce">
-             <label class="form-check-label" for="whiteSauce">
-               White Sauce
-             </label>
-           </div>
-           <div class="form-check">
-             <input class="form-check-input" name='sauceRadio' type="radio" value="Barbeque" id="bbqSauce">
-             <label class="form-check-label" for="bbqSauce">
-               Barbeque
-             </label>
-           </div>
-           <div class="form-check">
-             <input class="form-check-input" name='sauceRadio' type="radio" value="No Sauce" id="noSauce">
-             <label class="form-check-label" for="noSauce">
-               No Sauce
-             </label>
-           </div>
-         </div>
-         <!------------------/SAUCE-------------->
-
-       </div>
-     <!--/CUSTOMIZE-->
-
-     <!--BUTTONS-->
-     <div class='row'>
-       <div class='col text-center mb-5'>
-         <button class='btn btn-primary' type=submit>Submit Order</button>
-         <button class='btn btn-danger' type="reset">Reset</button>
-       </div>
-     </div>
-     <!--/BUTTONS-->
-   </form>
-   <!--/FORM-->
-
-   <!------------RECEIPT--------->
+      <!------------RECEIPT--------->
       <div id='receipt' class='row'>
         <div class='col'>
           <h3>Order Received!</h3>
@@ -378,7 +384,7 @@
       </div>
       <!----------/RECEIPT------->
       <button id='orderAgain' class='btn btn-primary'>Order Again!</button>
-   </div>
-   <!--/ENTIRE CONTAINER-->
+    </div>
+    <!--/ENTIRE CONTAINER-->
   </body>
-</html>
+</html

@@ -1,4 +1,3 @@
-
 // back-end logic
 
 function getValues() {
@@ -27,6 +26,7 @@ function calculateMeatVeggie(array) {
     return cost;
   }
 };
+
 function calculateCheese() {
   if ($('input[name=cheeseRadio]:checked').val() === 'Extra Cheese') {
     var cost = 3;
@@ -52,6 +52,7 @@ function calculateSize(size) {
     return 16;
   }
 };
+
 function concat(toppings, cost) {
   if (cost === 0) {
     return "NONE";
@@ -84,33 +85,34 @@ $(function() {
 
     meats = concat(meats, meatCost);
     veggies = concat(veggies, veggieCost);
+
     $('#sizeSelection').html(size);
-      $('#sizeCost').html(sizeCost);
-      $('#crustSelection').html(crust);
-      $('#crustCost').html(crustCost);
-      $('#cheeseSelection').html(cheese);
-      $('#cheeseCost').html(cheeseCost);
-      $('#sauceSelection').html(sauce);
-      $('#sauceCost').html(sauceCost);
-      $('#meatSelection').html(meats);
-      $('#meatCost').html(meatCost);
-      $('#veggieSelection').html(veggies);
-      $('#veggieCost').html(veggieCost);
-      $('#totalCost').html(totalCost);
+    $('#sizeCost').html(sizeCost);
+    $('#crustSelection').html(crust);
+    $('#crustCost').html(crustCost);
+    $('#cheeseSelection').html(cheese);
+    $('#cheeseCost').html(cheeseCost);
+    $('#sauceSelection').html(sauce);
+    $('#sauceCost').html(sauceCost);
+    $('#meatSelection').html(meats);
+    $('#meatCost').html(meatCost);
+    $('#veggieSelection').html(veggies);
+    $('#veggieCost').html(veggieCost);
+    $('#totalCost').html(totalCost);
 
-      $('#receipt').slideToggle(800);
+    $('#receipt').slideToggle(800);
 
-      $('form').slideToggle(800);
-      $('#orderAgain').show();
-    });
-
-    //clear form and order again!
-    $('#orderAgain').click(function() {
-      event.preventDefault;
-      $('form').trigger('reset');
-      $('form').slideToggle(800);
-      $('#receipt').slideToggle(800);
-      $('#orderAgain').hide();
-    });
-
+    $('form').slideToggle(800);
+    $('#orderAgain').show();
   });
+
+  //clear form and order again!
+  $('#orderAgain').click(function() {
+    event.preventDefault;
+    $('form').trigger('reset');
+    $('form').slideToggle(800);
+    $('#receipt').slideToggle(800);
+    $('#orderAgain').hide();
+  });
+
+});
