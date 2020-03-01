@@ -52,3 +52,35 @@ function calculateSize(size) {
     return 16;
   }
 };
+function concat(toppings, cost) {
+  if (cost === 0) {
+    return "NONE";
+  } else if (cost >= 1) {
+    var oneWord = toppings.join(", ");
+  return oneWord;
+  }
+};
+
+//front-end logic
+$(function() {
+
+  //calculate receipt on submit
+  $('form').submit(function() {
+    event.preventDefault();
+    var valuesArray = getValues();
+    var size = valuesArray[0];
+    var meats = valuesArray[1];
+    var veggies = valuesArray[2];
+    var cheese = valuesArray[3];
+    var crust = valuesArray[4];
+    var sauce = valuesArray[5];
+    var sizeCost = calculateSize(size);
+    var meatCost = calculateMeatVeggie(meats);
+    var veggieCost = calculateMeatVeggie(veggies);
+    var cheeseCost = calculateCheese();
+    var crustCost = calculateCrust();
+    var sauceCost = 0;
+    var totalCost = sizeCost + meatCost + veggieCost + sauceCost + cheeseCost + crustCost;
+
+    meats = concat(meats, meatCost);
+    veggies = concat(veggies, veggieCost);
