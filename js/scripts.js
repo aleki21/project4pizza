@@ -84,3 +84,33 @@ $(function() {
 
     meats = concat(meats, meatCost);
     veggies = concat(veggies, veggieCost);
+    $('#sizeSelection').html(size);
+      $('#sizeCost').html(sizeCost);
+      $('#crustSelection').html(crust);
+      $('#crustCost').html(crustCost);
+      $('#cheeseSelection').html(cheese);
+      $('#cheeseCost').html(cheeseCost);
+      $('#sauceSelection').html(sauce);
+      $('#sauceCost').html(sauceCost);
+      $('#meatSelection').html(meats);
+      $('#meatCost').html(meatCost);
+      $('#veggieSelection').html(veggies);
+      $('#veggieCost').html(veggieCost);
+      $('#totalCost').html(totalCost);
+
+      $('#receipt').slideToggle(800);
+
+      $('form').slideToggle(800);
+      $('#orderAgain').show();
+    });
+
+    //clear form and order again!
+    $('#orderAgain').click(function() {
+      event.preventDefault;
+      $('form').trigger('reset');
+      $('form').slideToggle(800);
+      $('#receipt').slideToggle(800);
+      $('#orderAgain').hide();
+    });
+
+  });
